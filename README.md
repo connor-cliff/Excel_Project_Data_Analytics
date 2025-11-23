@@ -69,7 +69,7 @@ Senior Data Engineers and Data Scientists have higher median salaries both in th
 ### 3. Most Common Skills
 Aggregated skill frequency using the data model to identify the most frequently listed skills.
 
-Power Pivot was used to creat a relationship between these two tables.
+Power Pivot was used to create a relationship between these two tables.
 
 <img src="Resources/data_model.JPG">
 
@@ -84,3 +84,5 @@ Built a combo PivotChart to compare median salary with how often each skill appe
 
 Skills like Python, Oracle, and SQL are linked to higher median salaries, showing their strong value in well-paid tech roles. In contrast, skills such as PowerPoint and Word appear less often and are associated with lower salaries. Overall, the data suggests that learning high value technical skills can lead to better paying opportunities in the tech industry.
 
+## Conclusion
+This project provided hands-on practice with advanced Excel features while exploring the data science job market. Analysis showed that roles requiring more specialised skills, particularly technical skills like Python, SQL, and Oracle, tend to offer higher salaries. Regional differences highlight the impact of location on pay, and frequent skills like SQL and Python reflect industry demand. Overall, the project reinforces the value of developing in-demand technical skills for career growth in data related roles.
