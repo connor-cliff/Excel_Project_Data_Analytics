@@ -10,7 +10,7 @@ The analysis focuses on four questions:
 4. What are the top-paying skills?
 
 ## Excel Skills Practised
-- Power Query  
+- Power Query (ETL)
 - Power Pivot and Data Model  
 - PivotTables  
 - PivotCharts  
@@ -21,9 +21,21 @@ Two queries were created and cleaned:
 - **Jobs table**: job information  
 - **Skills table**: individual skills linked by job ID  
 
-Steps included changing data types, removing unnecessary columns, and standardising text.
+Each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
 
-> **Add screenshot here** – Power Query setup
+### data_jobs_all
+<img src="Resources/salary_transform.JPG" width="600">
+
+### data_jobs_skills
+<img src="Resources/skills_transform.JPG" width="600">
+
+Each query was then loaded into the workbook to be used for subsequent analysis.
+
+### data_jobs_all
+<img src="Resources/salary_load.JPG">
+
+### data_jobs_skills
+<img src="Resources/skills_load.JPG">
 
 ## Data Model (Power Pivot)
 A relationship was created between the jobs and skills tables using the **job_id** field.
@@ -39,4 +51,27 @@ Counted the number of skills per job and compared this with median salary using 
 
 ### 2. Salary by Region
 Created DAX measures to calculate median salary. Example:
+
+Median Salary :=
+MEDIAN(data_jobs_all[salary_year_avg])
+
+
+> **Add screenshot here** – DAX measure  
+> **Add chart screenshot here**
+
+### 3. Most Common Skills
+Aggregated skill frequency using the data model to identify the most frequently listed skills.
+
+> **Add chart screenshot here**
+
+### 4. Top-Paying Skills
+Built a combo PivotChart to compare median salary with how often each skill appears.
+
+> **Add chart screenshot here**
+
+## Files
+- `Data_Jobs_Analysis.xlsx` – workbook with queries, model, PivotTables, and visuals.
+
+## Notes
+This was completed as part of a guided course. The workflow follows the instructor’s structure, but the summary here reflects my own understanding and practice.
 
