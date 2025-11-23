@@ -24,10 +24,10 @@ Two queries were created and cleaned:
 Each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
 
 ### data_jobs_all
-<img src="Resources/salary_transform.JPEG" width="600">
+<img src="Resources/salary_transform.JPG" width="600">
 
 ### data_jobs_skills
-<img src="Resources/skills_transform.JPEG" width="600">
+<img src="Resources/skills_transform.JPG" width="600">
 
 Each query was then loaded into the workbook to be used for subsequent analysis.
 
@@ -40,7 +40,7 @@ Each query was then loaded into the workbook to be used for subsequent analysis.
 ## Power Pivot & DAX
 A relationship was created between the jobs and skills tables using the **job_id** field.
 
-<img src="Resources/data_model.JPEG">
+<img src="Resources/data_model.JPG">
 
 ## Key Analysis
 
