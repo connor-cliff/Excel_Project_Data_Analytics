@@ -2,6 +2,8 @@
 
 This Excel project was created with the aim to analyse the data science job market and understand what employers are looking for while providing a great oppertunity to to practise advanced Excel skills.
 
+Find the final spreadsheet here: [Excel_Project_for_Data_Analytics.xlsx](Excel_Project_for_Data_Analytics.xlsx)
+
 ## Objectives
 The analysis focuses on four questions:
 1. Do job postings that list more skills tend to offer higher salaries?
@@ -49,27 +51,36 @@ Counted the number of skills per job and compared this with median salary using 
 
 <img src="Resources/skills_money.JPG">
 
+Job postings that list more required skills generally offer higher median salaries, especially for roles like Senior Data Engineer and Data Scientist. Positions with fewer required skills, such as Business Analyst, tend to pay less. Overall, roles demanding more specialised skills are linked to higher salaries.
+
 ### 2. Salary by Region
-Created DAX measures to calculate median salary. Example:
+I built a PivotTable using the Power Pivot data model, placing job_title_short in the rows and salary_year_avg in the values area. I then added a DAX measure to calculate the median salary specifically for United States roles (where most of this data is for).
 
-Median Salary :=
-MEDIAN(data_jobs_all[salary_year_avg])
+I then created DAX measures to calculate median salary. Example:
 
+``` excel
+Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
+```
 
-> **Add screenshot here** – DAX measure  
-<img src="Resources/data_model.JPG">
+<img src="Resources/region_table.JPG">
+
+Senior Data Engineers and Data Scientists have higher median salaries both in the US and internationally, reflecting strong global demand for advanced data skills. The gap between US and non-US salaries is especially noticeable in high-tech roles, likely due to the concentration of tech industries in the US.
 
 ### 3. Most Common Skills
 Aggregated skill frequency using the data model to identify the most frequently listed skills.
 
+Power Pivot was used to creat a relationship between these two tables.
+
+<img src="Resources/data_model.JPG">
+
 <img src="Resources/skill_analysis.JPG">
+
+SQL and Python appear most frequently in data roles, highlighting their importance in data processing and analysis. Cloud technologies such as AWS and Azure also show strong presence, reflecting the industry's shift toward cloud and big data. Knowing which skills are most in demand helps guide both professional development.
 
 ### 4. Top-Paying Skills
 Built a combo PivotChart to compare median salary with how often each skill appears.
 
 <img src="Resources/top_skills.JPG">
 
-## Files
-- `Data_Jobs_Analysis.xlsx` – workbook with queries, model, PivotTables, and visuals.
-
+Skills like Python, Oracle, and SQL are linked to higher median salaries, showing their strong value in well-paid tech roles. In contrast, skills such as PowerPoint and Word appear less often and are associated with lower salaries. Overall, the data suggests that learning high value technical skills can lead to better paying opportunities in the tech industry.
 
