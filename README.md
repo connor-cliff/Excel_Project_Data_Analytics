@@ -24,10 +24,10 @@ Two queries were created and cleaned:
 Each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
 
 ### data_jobs_all
-<img src="Resources/salary_transform.JPG" width="600">
+<img src="Resources/salary_transform.JPG">
 
 ### data_jobs_skills
-<img src="Resources/skills_transform.JPG" width="600">
+<img src="Resources/skills_transform.JPG">
 
 Each query was then loaded into the workbook to be used for subsequent analysis.
 
@@ -47,7 +47,7 @@ A relationship was created between the jobs and skills tables using the **job_id
 ### 1. Skills vs Salary
 Counted the number of skills per job and compared this with median salary using PivotTables.
 
-> **Add chart screenshot here**
+<img src="Resources/skills_money.JPG">
 
 ### 2. Salary by Region
 Created DAX measures to calculate median salary. Example:
@@ -57,21 +57,19 @@ MEDIAN(data_jobs_all[salary_year_avg])
 
 
 > **Add screenshot here** – DAX measure  
-> **Add chart screenshot here**
+<img src="Resources/data_model.JPG">
 
 ### 3. Most Common Skills
 Aggregated skill frequency using the data model to identify the most frequently listed skills.
 
-> **Add chart screenshot here**
+<img src="Resources/skill_analysis.JPG">
 
 ### 4. Top-Paying Skills
 Built a combo PivotChart to compare median salary with how often each skill appears.
 
-> **Add chart screenshot here**
+<img src="Resources/top_skills.JPG">
 
 ## Files
 - `Data_Jobs_Analysis.xlsx` – workbook with queries, model, PivotTables, and visuals.
 
-## Notes
-This was completed as part of a guided course. The workflow follows the instructor’s structure, but the summary here reflects my own understanding and practice.
 
