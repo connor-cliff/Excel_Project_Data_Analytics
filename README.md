@@ -16,7 +16,7 @@ The analysis focuses on four questions:
 - PivotCharts  
 - Basic DAX measures
 
-## Data Preparation (Power Query)
+## Power Query (ETL)
 Two queries were created and cleaned:
 - **Jobs table**: job information  
 - **Skills table**: individual skills linked by job ID  
@@ -24,10 +24,10 @@ Two queries were created and cleaned:
 Each query was transformed by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
 
 ### data_jobs_all
-<img src="Resources/salary_transform.JPG" width="600">
+<img src="Resources/salary_transform.JPEG" width="600">
 
 ### data_jobs_skills
-<img src="Resources/skills_transform.JPG" width="600">
+<img src="Resources/skills_transform.JPEG" width="600">
 
 Each query was then loaded into the workbook to be used for subsequent analysis.
 
@@ -37,10 +37,10 @@ Each query was then loaded into the workbook to be used for subsequent analysis.
 ### data_jobs_skills
 <img src="Resources/skills_load.JPG">
 
-## Data Model (Power Pivot)
+## Power Pivot & DAX
 A relationship was created between the jobs and skills tables using the **job_id** field.
 
-> **Add screenshot here** – Data Model diagram
+<img src="Resources/data_model.JPEG">
 
 ## Key Analysis
 
